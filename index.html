@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience luxury and comfort at Kingsukh Guest House in Purulia. Modern amenities, traditional hospitality, and stunning lake views.">
+    <title>Kingsukh Guest House - Luxury Stay in Purulia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1>
+                        <span class="logo-main">Kingsukh</span>
+                        <span class="logo-accent">Guest House</span>
+                    </h1>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#rooms" class="nav-link">Rooms</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <button class="btn-whatsapp" onclick="handleWhatsAppBooking()">
+                        <i data-lucide="message-circle"></i>
+                        <span>Book on WhatsApp</span>
+                    </button>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-content">
+                    <a href="#home" class="mobile-nav-link" onclick="closeMobileMenu()">Home</a>
+                    <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">About</a>
+                    <a href="#rooms" class="mobile-nav-link" onclick="closeMobileMenu()">Rooms</a>
+                    <a href="#amenities" class="mobile-nav-link" onclick="closeMobileMenu()">Amenities</a>
+                    <a href="#gallery" class="mobile-nav-link" onclick="closeMobileMenu()">Gallery</a>
+                    <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a>
+                    <button class="btn-whatsapp mobile" onclick="handleWhatsAppBooking()">
+                        <i data-lucide="message-circle"></i>
+                        <span>Book on WhatsApp</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-image"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="floating-element floating-1"></div>
+        <div class="floating-element floating-2"></div>
+        <div class="floating-element floating-3"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+               
+                
+                <!-- Main Heading -->
+                <h1 class="hero-title">
+                    <div class="title-line-1">Experience Luxury in Nature</div>
+                </h1>
+                
+                <!-- Description -->
+                <p class="hero-description">
+                    Discover comfort and tranquility at Kingsukh Guest House, where modern amenities 
+                    meet traditional hospitality in the heart of Purulia's scenic beauty.
+                </p>
+                
+                <!-- Info badges -->
+                <div class="info-badges">
+                    <div class="info-badge">
+                        <i data-lucide="map-pin"></i>
+                        <span>Baranti Village, Purulia</span>
+                    </div>
+                    <div class="info-badge">
+                        <i data-lucide="calendar"></i>
+                        <span>Available Year Round</span>
+                    </div>
+                </div>
+                
+                <!-- CTA Buttons -->
+                <div class="cta-buttons">
+                    <button class="btn-primary" onclick="handleWhatsAppBooking()">
+                        <i data-lucide="message-circle"></i>
+                        <span>Book on WhatsApp</span>
+                    </button>
+                    <button class="btn-secondary" onclick="scrollToSection('rooms')">
+                        View Rooms
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Content -->
+                <div class="about-content">
+                    <span class="section-label">About Us</span>
+                    <h2 class="section-title">Your Home Away From Home</h2>
+                    <p class="about-text">
+                        Nestled in the picturesque landscape of Purulia, Kingsukh Guest House has been 
+                        providing exceptional hospitality for over two decades. We combine the warmth of 
+                        traditional Bengali hospitality with modern amenities to create an unforgettable 
+                        experience for our guests.
+                    </p>
+                    <p class="about-text">
+                        Our commitment to excellence, attention to detail, and personalized service has 
+                        made us a preferred destination for travelers seeking comfort, tranquility, and 
+                        authentic local experiences.
+                    </p>
+                    
+                    <!-- Features Grid -->
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i data-lucide="users"></i>
+                            </div>
+                            <h4>Family Owned</h4>
+                            <p>Three generations of hospitality excellence</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i data-lucide="award"></i>
+                            </div>
+                            <h4>Award Winning</h4>
+                            <p>Recognized for outstanding guest experience</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i data-lucide="heart"></i>
+                            </div>
+                            <h4>Personal Touch</h4>
+                            <p>Every guest is treated like family</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i data-lucide="shield"></i>
+                            </div>
+                            <h4>Safe & Secure</h4>
+                            <p>Your comfort and safety is our priority</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Images -->
+                <div class="about-images">
+                    
+                            <img src="House.jpg" alt="Interior" class="about-img" height="600" width="300">
+                    
+                    
+                    <!-- Experience Badge -->
+                    <div class="experience-badge">
+                        <div class="badge-content">
+                            <div class="badge-number">20+</div>
+                            <div class="badge-text">Years</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms">
+        <div class="container">
+            <!-- Header -->
+            <div class="section-header">
+                <span class="section-label">Accommodation</span>
+                <h2 class="section-title">Comfortable Rooms</h2>
+                <p class="section-description">
+                    Choose from our selection of thoughtfully designed rooms, each offering comfort, 
+                    style, and modern amenities for an unforgettable stay.
+                </p>
+            </div>
+
+            <!-- Rooms Grid -->
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="room1.jpg" alt="Deluxe Room">
+                        <div class="room-price">₹1000/night</div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-name">Cozy Haven Room</h3>
+                        <p class="room-description">Escape to comfort in our Cozy Haven Room, a snug retreat designed for intimate relaxation.</p>
+                        <button class="room-book-btn" onclick="handleWhatsAppBooking('Deluxe Room')">
+                            <i data-lucide="message-circle"></i>
+                            <span>Book on WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="room2.jpg" alt="Family Suite">
+                        <div class="room-price">₹1500/night</div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-name">Spacious Serenity Suite</h3>
+                        <p class="room-description">Indulge in luxury and ample space in our Spacious Serenity Suite, where tranquility meets roomy elegance.</p>
+                        <button class="room-book-btn" onclick="handleWhatsAppBooking('Family Suite')">
+                            <i data-lucide="message-circle"></i>
+                            <span>Book on WhatsApp</span>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <!-- Header -->
+            <div class="section-header">
+                <span class="section-label">Gallery</span>
+                <h2 class="section-title">Visual Journey</h2>
+                <p class="section-description">
+                    Explore our beautiful property, comfortable rooms, and stunning surroundings 
+                    through these carefully curated photographs.
+                </p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox('https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop', 'Guest House Exterior', 0)">
+                    <img src="images/ayodhya.webp" alt="Guest House Exterior">
+                    
+                </div>
+                <div class="gallery-item" onclick="openLightbox('https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop', 'Deluxe Room', 1)">
+                    <img src="images/mithonDam.webp" alt="Deluxe Room">
+                    
+                </div>
+                <div class="gallery-item" onclick="openLightbox('https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop', 'Garden Area', 2)">
+                    <img src="images/baranti.webp" alt="Garden Area">
+                    
+                </div>
+                <div class="gallery-item" onclick="openLightbox('https://images.pexels.com/photos/271643/pexels-photo-271643.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop', 'Family Suite', 3)">
+                    <img src="images/flower.jpg" alt="Family Suite">
+                    
+                </div>
+                <div class="gallery-item" onclick="openLightbox('https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop', 'Lake View', 4)">
+                    <img src="images/nature.jpg" alt="Lake View">
+                    
+                </div>
+                <div class="gallery-item" onclick="openLightbox('https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop', 'Interior Dining', 5)">
+                    <img src="images/recep.jpg" alt="Interior Dining">
+                    
+                </div>
+                <div class="gallery-item" onclick="openLightbox('https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop', 'Premium Room', 6)">
+                    <img src="images/room.jpg" alt="Premium Room">
+                    
+                </div>
+                <div class="gallery-item" onclick="openLightbox('https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop', 'Exterior View', 7)">
+                    <img src="images/House.jpg" alt="Exterior View">
+                    
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">250+</div>
+                    <div class="stat-label">Happy Guests</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Satisfaction Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Service</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <!-- Header -->
+            <div class="section-header">
+                <span class="section-label">Contact Us</span>
+                <h2 class="section-title">Plan Your Visit</h2>
+                <p class="section-description">
+                    Ready to experience the comfort and hospitality of Kingsukh Guest House? 
+                    Get in touch with us to make your reservation or ask any questions.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Get in Touch</h3>
+                        
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div>
+                                    <h4>Address</h4>
+                                    <p>
+                                        Beside Barsol Water Tank<br>
+                                        Baranti Village, Purulia<br>
+                                        West Bengal, India - 723159
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+91 9007062180</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>kkghosh0099@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="clock"></i>
+                                </div>
+                                <div>
+                                    <h4>Check-in/out</h4>
+                                    <p>
+                                        Check-in: 12:00 PM<br>
+                                        Check-out: 11:00 AM
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="map-card">
+                        <h3>Location</h3>
+                        <div class="map-container" style="width: 100%; height: 450px; margin-bottom: 10px;">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7313.003491353379!2d86.85979!3d23.586332!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6e3fdd3ff9ebb%3A0x517a57e3f93c1807!2sKingsukh%20Guest%20House!5e0!3m2!1sen!2sin!4v1751351035805!5m2!1sen!2sin" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <p class="map-description">
+                            Located in the scenic Baranti Village, just minutes away from Baranti Lake 
+                            and surrounded by lush green hills.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-card">
+                    <h3>Send us a Message</h3>
+                    
+                    <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" placeholder="Your first name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Your last name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="your@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="+91 XXXXX XXXXX">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Check-in Date</label>
+                                <input type="date">
+                            </div>
+                            <div class="form-group">
+                                <label>Check-out Date</label>
+                                <input type="date">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea rows="4" placeholder="Tell us about your requirements, special requests, or any questions you have..."></textarea>
+                        </div>
+
+                        <button type="submit" class="form-submit-btn">
+                            <i data-lucide="send"></i>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Main Footer -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <!-- About -->
+                    <div class="footer-section">
+                        <h3>Kingsukh Guest House</h3>
+                        <p>
+                            Experience the perfect blend of comfort, luxury, and traditional Bengali 
+                            hospitality in the heart of Purulia's scenic beauty.
+                        </p>
+                        <div class="social-links">
+                            <!-- Phone -->
+                            <a href="tel:+919876543210" class="social-link" title="Call Us">
+                                <i data-lucide="phone"></i>
+                            </a>
+
+                            <!-- Email -->
+                            <a href="mailto:info@kingsukhguesthouse.com" class="social-link" title="Email Us">
+                                <i data-lucide="mail"></i>
+                            </a>
+
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/kingsukhguesthouse/" class="social-link" title="Instagram">
+                                <i data-lucide="instagram"></i>
+                            </a>
+
+                            <!-- Location -->
+                            <a href="https://www.google.com/maps?q=Kingsukh+Guest+House" class="social-link" title="Find Us on Map" target="_blank">
+                                <i data-lucide="map-pin"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#rooms">Rooms</a></li>
+                            <li><a href="#amenities">Amenities</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#" onclick="handleWhatsAppBooking()">Book Now</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul class="footer-services">
+                            <li>Room Service</li>
+                            <li>Restaurant</li>
+                            <li>Free WiFi</li>
+                            <li>Free Parking</li>
+                            <li>Laundry Service</li>
+                            <li>Tour Guide</li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-section">
+                        <h4>Contact Info</h4>
+                        <div class="footer-contact">
+                            <div class="footer-contact-item">
+                                <i data-lucide="map-pin"></i>
+                                <div>
+                                    <p>
+                                        Beside Barsol Water Tank<br>
+                                        Baranti Village, Purulia<br>
+                                        West Bengal - 723159
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="footer-contact-item">
+                                <i data-lucide="phone"></i>
+                                <p>+91 9007062180</p>
+                            </div>
+                            <div class="footer-contact-item">
+                                <i data-lucide="mail"></i>
+                                <p>kkghosh0099@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Kingsukh Guest House. All rights reserved.</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">
+                <i data-lucide="x"></i>
+            </button>
+            
+            <img id="lightboxImage" src="" alt="">
+            
+            <button class="lightbox-prev" onclick="previousImage()">
+                <i data-lucide="chevron-left"></i>
+            </button>
+            
+            <button class="lightbox-next" onclick="nextImage()">
+                <i data-lucide="chevron-right"></i>
+            </button>
+            
+            <div class="lightbox-info">
+                <p id="lightboxTitle"></p>
+                <p id="lightboxCounter"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
